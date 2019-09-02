@@ -1,7 +1,6 @@
 package javaBase;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -25,6 +24,18 @@ public class Itest {
                     WebElement team = loginEels.get(0);
                     if (team != null) {
                         team.click();
+                        WebDriverWait trainintWait = new WebDriverWait(driver, 5000);
+                        List<WebElement> trainings = trainintWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='__item12-__xmlview5--sections-list-6-content']//div[@class='sapMSLITitleOnly']")));
+                        if (trainings != null) {
+                            WebElement training = trainings.get(0);
+                            training.click();
+                            WebDriverWait createWait = new WebDriverWait(driver, 10000);
+                            List<WebElement> createButtons = createWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//button[@id='__button25-__toolbar4-0']")));
+                            if (createButtons != null) {
+                                WebElement createButton = createButtons.get(0);
+                                createButton.click();
+                            }
+                        }
                     }
                 }
             } catch (TimeoutException e) {
