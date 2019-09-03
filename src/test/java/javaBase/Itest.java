@@ -8,9 +8,9 @@ import java.util.List;
 
 
 public class Itest {
-    private String sportsOne = "https://s1-dev.bsu.edu.cn/";
-    private String userName = "FionaZ";
-    private String passwords = "Zyw03120312";
+    private String sportsOne = "******";
+    private String userName = "******";
+    private String passwords = "******";
 
     public static void main(String[] args) throws InterruptedException {
         Itest autoTest = new Itest();
