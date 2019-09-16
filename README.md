@@ -1,7 +1,8 @@
 # Selenium with Java
-how to open browser
-how to find UI elements
-how to write data in UI elements
-how to post data
-how to do operation in the page
-how to test UI Interface
+1. how to open browser
+2. how to find UI elements
+3. how to write data in UI elements
+4. how to post data
+5. how to do operation in the page
+6. how to test UI Interface
+7. invoke service to check whether training is created
